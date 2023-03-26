@@ -8,4 +8,8 @@ layout: default
 
 ## Comedians
 
-## Clubs
+<ul>
+{% for comedian in site.comedians %}
+	<li><a href="{{ comedian.website }}" title="{{comedian.name}}">{{comedian.name}} | {{ comedian.country }}</a></li>
+{% endfor %}
+</ul>

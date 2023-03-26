@@ -28,6 +28,15 @@ twitter_username: jekyllrb
 github_username:  jekyll
 github:
   is_project_page: false
+google_analytics: G-88VQKBN0F0
+
+collections:
+  comedians:
+    output: true
+    # permalink: /:collection/:slug
+  shows:
+    output: true
+    # permalink: /:collection/:slug
 
 # Build settings
 remote_theme: pages-themes/minimal@v0.2.0
