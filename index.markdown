@@ -6,11 +6,17 @@ layout: default
 ---
 ## Clubs
 
-<ul>
-{% for club in site.clubs %}
-	<li><a href="{{ club.website }}" title="{{club.name}}">{{club.name}} | {{club.description}} | {{ club.location }}</a></li>
+{% assign countries = "Singapore" | split: "," %}
+{% for country in countries %}
+  <h3>{{ country }}</h3>
+  <ul>
+  {% for club in site.clubs %}
+    {% if club.country == country %}
+      <li><a href="{{ club.website }}" title="{{club.name}}">{{club.name}} | {{club.description}}</a></li>
+    {% endif %}
+  {% endfor %}
+  </ul>
 {% endfor %}
-</ul>
 
 ## Comedians
 

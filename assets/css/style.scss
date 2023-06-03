@@ -2,5 +2,68 @@
 ---
 
 @import "{{ site.theme }}";
-a { color: #000000; }
-header img { margin-bottom: 10px; }
+
+body { 
+    background-color: #171717; 
+    color: #EDEDED; 
+    padding: 50px; 
+    font: 14px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; 
+    font-weight: 400; 
+}
+
+h1, h2, h3, h4, h5, h6 { 
+    color: #EDEDED; 
+    margin: 0 0 20px; 
+}
+
+h2 { 
+    background-color: #DA0037; 
+    color: #EDEDED; 
+    padding: 15px; 
+}
+
+p, ul, ol, table, pre, dl { 
+    margin: 0 0 20px; 
+}
+
+a { 
+    color: #EDEDED; 
+    text-decoration: none; 
+    font-size: 16px; 
+    margin: 0 0 15px; 
+    display: inline-block;
+}
+
+a:hover, a:focus { 
+    color: #DA0037; 
+    font-weight: normal; 
+}
+
+h1 a:hover, h1 a:focus { 
+    color: #DA0037; 
+    font-weight: bold; 
+}
+
+.wrapper, section { 
+    background-color: #171717; 
+}
+
+pre { 
+    background-color: #444444; 
+}
+
+code, pre { 
+    color: #EDEDED; 
+}
+
+th, td { 
+    color: #EDEDED; 
+}
+
+img { 
+    filter: none; 
+}
+
+header img {
+    margin-bottom: 30px;
+}
