@@ -31,6 +31,8 @@ github:
 google_analytics: G-88VQKBN0F0
 
 collections:
+  clubs:
+    output: true
   comedians:
     output: true
     # permalink: /:collection/:slug

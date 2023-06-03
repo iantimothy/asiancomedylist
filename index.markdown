@@ -4,7 +4,13 @@
 
 layout: default
 ---
-## Shows
+## Clubs
+
+<ul>
+{% for club in site.clubs %}
+	<li><a href="{{ club.website }}" title="{{club.name}}">{{club.name}} | {{club.description}} | {{ club.location }}</a></li>
+{% endfor %}
+</ul>
 
 ## Comedians
 
