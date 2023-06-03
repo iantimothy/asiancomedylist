@@ -25,3 +25,11 @@ layout: default
 	<li><a href="{{ comedian.website }}" title="{{comedian.name}}">{{comedian.name}} | {{ comedian.country }}</a></li>
 {% endfor %}
 </ul>
+
+## Specials
+
+<ul>
+{% for special in site.specials %}
+	<li><a href="{{ special.website }}" title="{{special.name}}">{{special.name}} by {{ special.comedian }}</a></li>
+{% endfor %}
+</ul>
